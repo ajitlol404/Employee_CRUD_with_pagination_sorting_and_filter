@@ -53,21 +53,7 @@ public class EmployeeService {
 
 	// Save employee details
 	public void saveEmployee(EmployeeDto employeeDto) {
-//		employeeRepository.save(convertToEntity(employeeDto));
-
-		// Saving dummy data
-		Employee dto1 = convertToEntity(new EmployeeDto("Ajit1", "Kumar", "akn1@mail.com", "1234567890"));
-		Employee dto2 = convertToEntity(new EmployeeDto("Ajit2", "Kumar", "akn2@mail.com", "1234567890"));
-		Employee dto3 = convertToEntity(new EmployeeDto("Ajit3", "Kumar", "akn3@mail.com", "1234567890"));
-		Employee dto4 = convertToEntity(new EmployeeDto("Ajit4", "Kumar", "akn4@mail.com", "1234567890"));
-		Employee dto5 = convertToEntity(new EmployeeDto("Ajit5", "Kumar", "akn5@mail.com", "1234567890"));
-		Employee dto6 = convertToEntity(new EmployeeDto("Ajit6", "Kumar", "akn6@mail.com", "1234567890"));
-		Employee dto7 = convertToEntity(new EmployeeDto("Ajit7", "Kumar", "akn7@mail.com", "1234567890"));
-		Employee dto8 = convertToEntity(new EmployeeDto("Ajit8", "Kumar", "akn8@mail.com", "1234567890"));
-		Employee dto9 = convertToEntity(new EmployeeDto("Ajit9", "Kumar", "akn9@mail.com", "1234567890"));
-		Employee dto10 = convertToEntity(new EmployeeDto("Ajit10", "Kumar", "akn10@mail.com", "1234567890"));
-
-		employeeRepository.saveAll(List.of(dto1, dto2, dto3, dto4, dto5, dto6, dto7, dto8, dto9, dto10));
+		employeeRepository.save(convertToEntity(employeeDto));
 	}
 
 	// Get employee by id
